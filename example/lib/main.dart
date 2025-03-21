@@ -161,7 +161,7 @@ class _GameScreenState extends State<GameScreen>
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF3949AB), Color(0xFF1A237E)],
+            colors: [Color(0xFFA64D32), Color(0xFFEC5D44)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -234,7 +234,7 @@ class _GameScreenState extends State<GameScreen>
                     ),
                   ),
                   Text(
-                    "spinner Game",
+                    "Spinner Game",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -260,15 +260,15 @@ class _GameScreenState extends State<GameScreen>
                         setState(() {
                           if (win.value == -9999) {
                             _score = 0;
-                            _result = "oh no you lost everything";
+                            _result = "you lost All";
                             _showConfetti = false;
                           } else if (win.value == 1) {
-                            _result = 'you got +1 spin';
+                            _result = 'you got 1 spin';
                             _spinsRemaining++;
                             _showConfetti = false;
                           } else if (win.value > 200) {
                             _score += win.value;
-                            _result = 'wow you won ${win.label}!';
+                            _result = 'you won ${win.label}!';
                             _showConfetti = true;
                           } else {
                             _score += win.value;
