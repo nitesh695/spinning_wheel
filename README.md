@@ -1,21 +1,32 @@
-Spinning Wheel 🎡
+readme_content = """# 🎡 Spinning Wheel - Flutter Package
+=====================================================
 
-A fully customizable spinning wheel for Flutter applications! Easily create fortune wheels, prize spinners, or game-based random selectors with smooth animations and custom segments.
+[![pub package](https://img.shields.io/pub/v/spinning_wheel.svg)](https://pub.dev/packages/spinning_wheel) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/nitesh695/spinning_wheel?style=social)](https://github.com/nitesh695/spinning_wheel)
 
-🌟 Features
+A *customizable and animated spinning wheel* for Flutter, perfect for *games, lucky draws, and prize wheels*. 🎰🎯
 
-✅ Fully customizable spinning wheel 🎨
-✅ Supports text labels, colors, and images 🖼️
-✅ Smooth animation with realistic spin physics 🎯
-✅ Callback for detecting spin completion 🔥
+## ✨ Features
+✅ *Smooth spinning animation*  
+✅ *Customizable segments with images & colors*  
+✅ *Supports touch interaction*  
+✅ *Easy integration with controllers*
 
-📦 Installation
+---
 
-Add this package to your pubspec.yaml:
 
+## 📸 Demo
+<p align="center">
+  <img src="https://your-demo-gif-url.com/spinning_wheel_demo.gif" width="300">
+</p>
+
+---
+
+## 🚀 Installation
+
+Add this to your ⁠ pubspec.yaml ⁠:
+```yaml
 dependencies:
-spinning_wheel: latest_version
-Then, run:
+  spinning_wheel: ^0.0.1  # Use latest version from pub.dev
 
 flutter pub get
 🔧 Usage

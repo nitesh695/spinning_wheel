@@ -101,10 +101,10 @@ class WheelDisplay extends StatelessWidget {
                         color: indicatorColor ?? Colors.red,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
+                            color: Colors.black.withValues(alpha: 0.5),
                             blurRadius: 5,
                             spreadRadius: 1,
-                            offset: Offset(0, 2),
+                            offset: const Offset(0, 2),
                           ),
                         ],
                       ),
@@ -112,7 +112,7 @@ class WheelDisplay extends StatelessWidget {
                         child: Container(
                           width: size * 0.015,
                           height: size * 0.015,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
                           ),

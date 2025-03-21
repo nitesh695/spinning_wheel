@@ -57,6 +57,9 @@ class SpinnerWheelState extends State<SpinnerWheel> with SingleTickerProviderSta
 
   void processSegments() async {
     processedSegments = await loadSegmentImages(widget.segments);
+    if(mounted){
+      setState(() {});
+    }
   }
 
   Future<void> startSpin() async {

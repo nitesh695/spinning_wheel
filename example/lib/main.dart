@@ -182,10 +182,10 @@ class _GameScreenState extends State<GameScreen>
                             vertical: 10,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.15),
+                            color: Colors.white.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: Colors.white.withOpacity(0.3),
+                              color: Colors.white.withValues(alpha: 0.3),
                             ),
                           ),
                           child: Row(
@@ -209,10 +209,10 @@ class _GameScreenState extends State<GameScreen>
                             vertical: 10,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.15),
+                            color: Colors.white.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: Colors.white.withOpacity(0.3),
+                              color: Colors.white.withValues(alpha: 0.3),
                             ),
                           ),
                           child: Row(
@@ -292,20 +292,20 @@ class _GameScreenState extends State<GameScreen>
                     decoration: BoxDecoration(
                       color:
                       _showConfetti
-                          ? Colors.amber.withOpacity(0.9)
-                          : Colors.white.withOpacity(0.2),
+                          ? Colors.amber.withValues(alpha: 0.9)
+                          : Colors.white.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
                         color:
                         _showConfetti
                             ? Colors.amber.shade700
-                            : Colors.white.withOpacity(0.3),
+                            : Colors.white.withValues(alpha: 0.3),
                       ),
                       boxShadow:
                       _showConfetti
                           ? [
                         BoxShadow(
-                          color: Colors.amber.withOpacity(0.5),
+                          color: Colors.amber.withValues(alpha: 0.5),
                           blurRadius: 10,
                           spreadRadius: 2,
                         ),
@@ -349,7 +349,7 @@ class _GameScreenState extends State<GameScreen>
                             borderRadius: BorderRadius.circular(12),
                           ),
                           elevation: _isSpinning ? 3 : 10,
-                          shadowColor: Colors.black.withOpacity(0.5),
+                          shadowColor: Colors.black.withValues(alpha: 0.5),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
