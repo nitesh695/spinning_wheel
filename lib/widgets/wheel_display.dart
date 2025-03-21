@@ -129,21 +129,21 @@ class WheelDisplay extends StatelessWidget {
                 height: size * 0.12,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [Colors.white, Colors.grey],
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.5),
+                      color: Colors.black.withValues(alpha: 0.5),
                       blurRadius: 5,
                       spreadRadius: 1,
                     ),
                   ],
                 ),
                 child: centerChild ?? Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Center(

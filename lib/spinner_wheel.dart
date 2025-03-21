@@ -19,7 +19,7 @@ class SpinnerWheel extends StatefulWidget {
   final double? imageWidth;
   final TextStyle? labelStyle;
 
-  SpinnerWheel({
+  const SpinnerWheel({
     super.key,
     required this.controller,
     required this.segments,

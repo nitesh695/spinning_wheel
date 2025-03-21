@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import '../models/wheel_segment.dart';
 
@@ -29,7 +28,7 @@ class WheelPainter extends CustomPainter {
     final Paint segmentPaint = Paint()
       ..style = PaintingStyle.fill
       ..shader = RadialGradient(
-        colors: [segment.color.withOpacity(0.7), segment.color],
+        colors: [segment.color.withValues(alpha: 0.7), segment.color],
         stops: const [0.3, 1.0],
       ).createShader(rect);
 
@@ -50,7 +49,7 @@ class WheelPainter extends CustomPainter {
 
       final Rect srcRect = Rect.fromLTWH(0, 0, segment.image!.width.toDouble(), segment.image!.height.toDouble());
       final Rect dstRect = Rect.fromCenter(
-        center: Offset(0, 0),
+        center: const Offset(0, 0),
         width: imageWidth ?? radius * 0.28,
         height: imageHeight ?? radius * 0.28,
       );
@@ -74,7 +73,7 @@ class WheelPainter extends CustomPainter {
     TextPainter textPainter = TextPainter(
       text: TextSpan(
         text: segment.label,
-        style: style ?? TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+        style: style ?? const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
       ),
       textDirection: TextDirection.ltr,
     );
