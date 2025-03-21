@@ -51,6 +51,7 @@ controller.startSpin();
 🖼️ Screenshot
 
 <img src="https://your-image-url.com/spinning-wheel-demo.gif" width="300"/>
+
 📜 API Reference
 
 Property	Type	Description
