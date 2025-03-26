@@ -14,6 +14,11 @@ A fully customizable spinning wheel for Flutter applications! Easily create fort
 - ✅ **Callback for detecting spin completion** 🔥
 
 ---
+## Image
+
+![Alt text](https://github.com/nitesh695/spinning_wheel/blob/main/example/assets/images/img.png)
+
+---
 
 ## 📦 Installation
 
